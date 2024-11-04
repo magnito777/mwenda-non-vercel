@@ -225,5 +225,6 @@ app.get('/search', async (req, res) => {
   }
 });
 
-// Export app for Vercel
-export default app;
+app.listen(8000, () => {
+  console.log('Server is running on port 8000');
+});
